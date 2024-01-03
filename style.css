@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: column;  /* Set the main axis to be vertical */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#textId {
+    order: 1;  /* Set order to 1 to appear above #container */
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #0e0d0d;
+}
+
+#container {
+    order: 2;  /* Set order to 2 to appear below #textId */
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5%;
+}
+
+.green {
+    margin: 20px;
+}
+
+.yellow {
+    margin: 20px;
+}
+
+span {
+    margin: 20px;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: italic;
+}
