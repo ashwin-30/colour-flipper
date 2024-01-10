@@ -6,12 +6,14 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #ffffff;
+    max-width: 100%;
+    font-size: 16px;
 }
 
 #textId {
     order: 1;  /* Set order to 1 to appear above #container */
-    margin: 20px;
-    font-size: 20px;
+    margin: 10px; /* Reduce margin */
+    font-size: 18px; /* Adjust font size */
     font-weight: bold;
     text-align: center;
     color: #0e0d0d;
@@ -19,7 +21,7 @@ body {
 
 #container {
     order: 2;  /* Set order to 2 to appear below #textId */
-    width: 20%;
+    width: 80%;
     height: 20%;
     display: flex;
     flex-direction: row;
@@ -28,6 +30,14 @@ body {
     background-color: #000000;
     color: #ffffff;
     border-radius: 5%;
+    width: 20%;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    margin: 10px; /* Reduce margin */
+    padding: 10px; /* Increase padding for better touch interaction */
 }
 
 .green {
@@ -43,4 +53,22 @@ span {
     font-size: 20px;
     font-weight: normal;
     font-style: italic;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Further reduce font size */
+    }
+
+    #textId {
+        font-size: 16px; /* Further reduce font size */
+    }
+
+    #container {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+
+    .btn {
+        padding: 8px; /* Further increase padding */
+    }
 }
